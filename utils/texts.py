@@ -20,3 +20,22 @@ ADMIN_CHECK_SUCCESS = \
 """
 ✅ E'lon muvaffaqiyatli tarzda faol holatga o'tkazildi.
 """
+
+
+CANCEL_LISTING = \
+"""
+❌ Sizning e'loningiz administrator tomonidan rad etildi.
+
+📌 Iltimos, e'loningizdagi xatolarni to'g'rilang yoki administrator bilan bog'laning.
+"""
+
+
+CANCEL_LISTING_ADMIN = \
+"""
+❌ {} raqamli e'lon rad etildi.
+"""
+
+CHEC_USER = \
+"""
+✅ To'lov muvaffaqiyatli amalga oshirildi!
+"""

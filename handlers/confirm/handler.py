@@ -5,14 +5,14 @@ from utils import texts
 from utils.env import ADMIN
 
 
-@dp.callback_query_handler(lambda c: c.data.startswith("check_"))
+@dp.callback_query_handler(lambda c: c.data.startswith("listing_check_"))
 async def handle_check_callback(callback_query: CallbackQuery):
-    listing_id = int(callback_query.data.split("_")[1])
-    tg_id = int(callback_query.data.split("_")[2])
+    listing_id = int(callback_query.data.split("_")[2])
+    tg_id = int(callback_query.data.split("_")[3])
     
-    user_id = callback_query.from_user.id
-    is_top = listingisTop(listing_id)
 
+    is_top = listingisTop(listing_id, type="check")
+    
     await bot.send_message(
         chat_id=ADMIN,
         text=texts.ADMIN_CHECK_SUCCESS

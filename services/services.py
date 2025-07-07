@@ -4,9 +4,9 @@ from utils.env import BASE_URL
 
 
 
-def listingisTop(listing_id):
+def listingisTop(listing_id, type):
     print(listing_id)
-    url = f"{BASE_URL}/listing/top/{listing_id}/"
+    url = f"{BASE_URL}/listing/top/{type}/{listing_id}/"
     response = requests.post(url)
     
     print(response.status_code)
