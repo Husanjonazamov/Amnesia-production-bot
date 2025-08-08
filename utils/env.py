@@ -4,5 +4,6 @@ env = Env()
 env.read_env()
 
 BOT_TOKEN = env('BOT_TOKEN')
-ADMIN = env('ADMIN')
+ADMIN = env.int('ADMIN')
 WEBAPP_URL = env.str("WEBAPP_URL")
+BASE_URL = env("BASE_URL")
