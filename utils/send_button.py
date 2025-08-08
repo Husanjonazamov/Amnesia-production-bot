@@ -37,7 +37,7 @@ def set_menu_webapp():
     payload = {
         "menu_button": {
             "type": "web_app",
-            "text": "📢 Объявления",
+            "text": "🛍 Open shop",
             "web_app": {
                 "url": f"{WEBAPP_URL}"
             }
