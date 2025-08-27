@@ -34,13 +34,11 @@ async def post(message: Message, state: FSMContext):
                     caption = message.caption if message.caption else ""
                     await bot.send_video(chat_id=user_id, video=video_id, caption=caption)
 
-                success += 1  # muvaffaqiyatli yuborilgan bo‘lsa sanaymiz
+                success += 1 
 
             except Exception as e:
                 print(f"Xatolik foydalanuvchi {user_id} ga yuborishda: {e}")
 
         await message.answer(f"✅ Сообщение успешно отправлено {success} пользователям.")
-
-    else:
-        await message.answer(f"Сообщение успешно отправлено пользователям.")
+   
         
